@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+}
+
+.categories {
+  padding: 4rem;
+  border-right: 1px solid black;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.categories li {
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(237, 168, 64);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.matches {
+  display: flex;
+  gap: 1rem;
+}
+
+.options {
+  display: flex;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.first-span,
+.second-span {
+  font-size: 1.5rem;
+}
+
+.categories h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+span.score {
+  position: relative;
+  font-size: 1.7rem;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.result {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.firsts,
+.seconds {
+  padding: 1.7rem;
+  font-size: 1.3rem;
+  background-color: thistle;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.seconds {
+  background-color: lightblue;
+}
