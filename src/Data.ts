@@ -3,13 +3,13 @@ export const Categories = ["Capitals Quiz", "Cinema Quiz", "Superhero Quiz"];
 export const capitalQuiz = [
   {
     id: 1,
-    first: "Germany",
-    second: "Berlin",
+    first: "Russia",
+    second: "Moscow",
   },
   {
     id: 2,
-    first: "Azerbaijan",
-    second: "Baku",
+    first: "Armenia",
+    second: "Yerevan",
   },
   {
     id: 3,
@@ -18,8 +18,8 @@ export const capitalQuiz = [
   },
   {
     id: 4,
-    first: "Jamaica",
-    second: "Kingston",
+    first: "Georgia",
+    second: "Tbilisi",
   },
 ];
 
