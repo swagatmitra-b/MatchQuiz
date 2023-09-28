@@ -1,8 +1,8 @@
 ## Hacktoberfest Contributions
 
-Hello! It's great to see you interested in helping me fix this little project. This may be the perfect repo for you to contribute to if you're someone with a decent understanding of HTML/CSS or JavaScript. Beginner or not, everyone is welcome :)
+Hello! It's great to see you interested in helping me fix this little project. This may be the perfect repo for you to contribute to if you're someone with a decent understanding of HTML/CSS, JavaScript/TypeScript or React. Beginner or not, everyone is welcome :)
 
-1. Feel free to take your time and understand the codebase. Before starting out with anything else, please read the README file to gain an overview of the application. The app was built using vanilla JavaScript so even if you're a beginner with little to no experience with frontend frameworks, you should feel right at home!
+1. Feel free to take your time and understand the codebase. Before starting out with anything else, please read the README file to gain an overview of the application!
 
 2. Create a fork of this repository and clone your forked repo on your local machine. You can set the upstream of your remote to my repo. Always remember to create a separate branch for any change you may make in the codebase. You can name your branch as per your will, but it is encouraged to stick to this convention.
 
