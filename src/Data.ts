@@ -21,17 +21,22 @@ export const capitalQuiz = [
     first: "Georgia",
     second: "Tbilisi",
   },
+  {
+    id: 5,
+    first: "Cambodia",
+    second: "Laos",
+  },
 ];
 
 export const cinemaQuiz = [
   {
     id: 1,
-    first: "Iron Man",
-    second: "Robert Downey Jr.",
+    first: "The Social Network",
+    second: "Jesse Eisenberg",
   },
   {
     id: 2,
-    first: "Inception",
+    first: "Django Unchained",
     second: "Leonardo Di Caprio",
   },
   {
@@ -44,6 +49,11 @@ export const cinemaQuiz = [
     first: "Kick-Ass",
     second: "Chloe Grace Moretz",
   },
+  {
+    id: 5,
+    first: "Captain Phillips",
+    second: "Tom Hanks"
+  }
 ];
 
 export const superHeroQuiz = [
@@ -67,4 +77,9 @@ export const superHeroQuiz = [
     first: "Thor",
     second: "Asgard",
   },
+  {
+    id: 5, 
+    first: "Bucky Barnes", 
+    second: "HYDRA"
+  }
 ];

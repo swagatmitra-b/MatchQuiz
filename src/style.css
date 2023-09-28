@@ -39,7 +39,7 @@
 
 .matches {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .options {
@@ -86,7 +86,7 @@ span.score {
 .firsts,
 .seconds {
   padding: 1.7rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   background-color: thistle;
   border-radius: 8px;
   cursor: pointer;
