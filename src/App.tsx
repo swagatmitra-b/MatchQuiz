@@ -163,7 +163,12 @@ export default function App() {
     const target = e.target as HTMLElement;
     if (!timer) setTimer(true);
     if (isActive) {
-      if (!first.includes(answer as string)) return;
+      if (!first.includes(answer as string)) {
+        clearColours("category");
+        target.style.backgroundColor = "orange";
+        checker(target.innerText, "first");
+        return;
+      }
       if (target.innerText === answer) {
         congratulations(target, "first");
         clearColours("active");
@@ -187,7 +192,12 @@ export default function App() {
     const target = e.target as HTMLElement;
     if (!timer) setTimer(true);
     if (isActive) {
-      if (!second.includes(answer as string)) return;
+      if (!second.includes(answer as string)) {
+        clearColours("category");
+        target.style.backgroundColor = "orange";
+        checker(target.innerText, "second");
+        return;
+      }
       if (target.innerText === answer) {
         congratulations(target, "second");
         clearColours("active");
