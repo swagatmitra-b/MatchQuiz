@@ -1,6 +1,6 @@
 // import "./styles.css";
 import "./style.css";
-import { generalQuiz, cinemaQuiz, superHeroQuiz } from "./Data";
+import { generalQuiz, cinemaQuiz, superHeroQuiz, musicQuiz, animeQuiz } from "./Data";
 import { useState } from "react";
 import Category from "./components/Category";
 import First from "./components/First";
@@ -10,6 +10,8 @@ const hash = {
   "General Quiz": generalQuiz,
   "Cinema Quiz": cinemaQuiz,
   "Superhero Quiz": superHeroQuiz,
+  "Music Quiz": musicQuiz, 
+  "Anime Quiz": animeQuiz
 };
 
 export default function App() {
