@@ -1,19 +1,44 @@
 // import "./styles.css";
 import "./style.css";
-import { capitalQuiz, cinemaQuiz, superHeroQuiz } from "./Data";
+import { generalQuiz, cinemaQuiz, superHeroQuiz } from "./Data";
 import { useState } from "react";
 import Category from "./components/Category";
 import First from "./components/First";
 import Second from "./components/Second";
 
-export default function App() {
-  const hash = {
-    "Capitals Quiz": capitalQuiz,
-    "Cinema Quiz": cinemaQuiz,
-    "Superhero Quiz": superHeroQuiz,
-  };
+const hash = {
+  "General Quiz": generalQuiz,
+  "Cinema Quiz": cinemaQuiz,
+  "Superhero Quiz": superHeroQuiz,
+};
 
-  const [category, setCategory] = useState(cinemaQuiz);
+export default function App() {
+
+  function fisherYatesShuffle(array: (typeof hash)["General Quiz"]) {
+    let arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function Slicer(category: (typeof hash)["General Quiz"]) {
+    let cat = fisherYatesShuffle(category);
+    let rand = Math.floor(Math.random() * cat.length);
+    let newCat = cat.slice(rand);
+    if (newCat.length > 5) {
+      newCat = cat.slice(rand, cat.length - (newCat.length - 5));
+      return newCat;
+    } else if (newCat.length < 5) {
+      rand = rand - (5 - newCat.length);
+      newCat = cat.slice(rand);
+      return newCat;
+    }
+    return newCat;
+  }
+
+  const [category, setCategory] = useState<ReturnType<typeof Slicer>>(() => Slicer(generalQuiz));
 
   const [isActive, setIsActive] = useState(false);
   const [answer, setAnswer] = useState<string | undefined>("");
@@ -170,17 +195,13 @@ export default function App() {
   };
 
   const changeCategory = (selectedCategory: string) => {
-    const selected = hash[selectedCategory as keyof typeof hash];
+    const selected = Slicer(hash[selectedCategory as keyof typeof hash]);
     setCategory(selected);
     setFirst(
-      selected
-        .map((secondMatch) => secondMatch.first)
-        .sort(() => Math.random() - 0.5)
+      fisherYatesShuffle(selected).map((secondMatch) => secondMatch.first)
     );
     setSecond(
-      selected
-        .map((secondMatch) => secondMatch.second)
-        .sort(() => Math.random() - 0.5)
+      fisherYatesShuffle(selected).map((secondMatch) => secondMatch.second)
     );
     setScore(0);
     clearColours("category");
