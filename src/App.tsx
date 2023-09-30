@@ -1,6 +1,6 @@
 // import "./styles.css";
 import "./style.css";
-import { generalQuiz, cinemaQuiz, superHeroQuiz } from "./Data";
+import { generalQuiz, cinemaQuiz, superHeroQuiz, musicQuiz, animeQuiz } from "./Data";
 import { useState } from "react";
 import Category from "./components/Category";
 import First from "./components/First";
@@ -10,6 +10,8 @@ const hash = {
   "General Quiz": generalQuiz,
   "Cinema Quiz": cinemaQuiz,
   "Superhero Quiz": superHeroQuiz,
+  "Music Quiz": musicQuiz, 
+  "Anime Quiz": animeQuiz
 };
 
 export default function App() {
@@ -43,14 +45,10 @@ export default function App() {
   const [isActive, setIsActive] = useState(false);
   const [answer, setAnswer] = useState<string | undefined>("");
   const [first, setFirst] = useState(
-    category
-      .map((firstMatch) => firstMatch.first)
-      .sort(() => Math.random() - 0.5)
+    fisherYatesShuffle(category).map((secondMatch) => secondMatch.first)
   );
   const [second, setSecond] = useState(
-    category
-      .map((secondMatch) => secondMatch.second)
-      .sort(() => Math.random() - 0.5)
+    fisherYatesShuffle(category).map((secondMatch) => secondMatch.second)
   );
   const [score, setScore] = useState(0);
 
