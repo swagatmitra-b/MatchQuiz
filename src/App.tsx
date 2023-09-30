@@ -1,7 +1,7 @@
 // import "./styles.css";
 import "./style.css";
 import { generalQuiz, cinemaQuiz, superHeroQuiz, musicQuiz, animeQuiz } from "./Data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Category from "./components/Category";
 import First from "./components/First";
 import Second from "./components/Second";
@@ -15,6 +15,17 @@ const hash = {
 };
 
 export default function App() {
+
+  function clock(now: any) {
+    let newNow:any = new Date();
+    let inSeconds = (newNow - now) / 1000;
+    let minutes = Math.floor(inSeconds / 60) % 60;
+    let seconds = Math.floor(inSeconds) % 60;
+    let milliseconds = String(inSeconds).split(".")[1];
+
+    setSpeed(minutes + ":" + seconds + ":" + milliseconds);
+  }
+
 
   function fisherYatesShuffle(array: (typeof hash)["General Quiz"]) {
     let arr = [...array];
@@ -42,6 +53,8 @@ export default function App() {
 
   const [category, setCategory] = useState<ReturnType<typeof Slicer>>(() => Slicer(generalQuiz));
 
+  const [speed, setSpeed] = useState<string>("")
+  const [timer, setTimer] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [answer, setAnswer] = useState<string | undefined>("");
   const [first, setFirst] = useState(
@@ -148,6 +161,7 @@ export default function App() {
 
   const firstClick = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
+    if (!timer) setTimer(true);
     if (isActive) {
       if (!first.includes(answer as string)) return;
       if (target.innerText === answer) {
@@ -171,6 +185,7 @@ export default function App() {
 
   const secondClick = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
+    if (!timer) setTimer(true);
     if (isActive) {
       if (!second.includes(answer as string)) return;
       if (target.innerText === answer) {
@@ -202,8 +217,28 @@ export default function App() {
       fisherYatesShuffle(selected).map((secondMatch) => secondMatch.second)
     );
     setScore(0);
+    setTimer(false);
     clearColours("category");
   };
+
+  useEffect(() => {
+    let intervalId: any;
+
+    if (timer) {
+      const startTime = new Date();
+      intervalId = setInterval(() => clock(startTime), 10);
+    } else if (!timer && intervalId) {
+      clearInterval(intervalId);
+    }
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [timer]);
+
+  useEffect(() => {
+    if (first.length == 0) setTimer(false);
+  }, [first.length]);
 
   return (
     <div className="app">
@@ -219,7 +254,7 @@ export default function App() {
       ) : (
         <div className="result">
           <h2>Your score is {score}</h2>
-          <h2>You completed in time: </h2>
+          <h2>You completed in time {speed} </h2>
         </div>
       )}
     </div>
