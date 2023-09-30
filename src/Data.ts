@@ -1,6 +1,6 @@
-export const Categories = ["Capitals Quiz", "Cinema Quiz", "Superhero Quiz"];
+export const Categories = ["General Quiz", "Cinema Quiz", "Superhero Quiz"];
 
-export const capitalQuiz = [
+export const generalQuiz = [
   {
     id: 1,
     first: "Russia",
