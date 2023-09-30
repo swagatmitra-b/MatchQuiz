@@ -1,30 +1,111 @@
-export const Categories = ["Capitals Quiz", "Cinema Quiz", "Superhero Quiz"];
+export const Categories = [
+  "General Quiz",
+  "Cinema Quiz",
+  "Superhero Quiz",
+  "Music Quiz",
+  "Anime Quiz",
+];
 
-export const capitalQuiz = [
+export const generalQuiz = [
   {
     id: 1,
-    first: "Russia",
-    second: "Moscow",
+    first: "APJ Abdul Kalam",
+    second: "Missile Man",
   },
   {
     id: 2,
-    first: "Armenia",
-    second: "Yerevan",
+    first: "Goethe",
+    second: "Faust",
   },
   {
     id: 3,
-    first: "India",
-    second: "New Delhi",
+    first: "Beethovan",
+    second: "Symphony No. 5",
   },
   {
     id: 4,
-    first: "Georgia",
-    second: "Tbilisi",
+    first: "Malamute",
+    second: "Alaska",
   },
   {
     id: 5,
-    first: "Cambodia",
-    second: "Laos",
+    first: "Viking 1",
+    second: "Mars",
+  },
+  {
+    id: 6,
+    first: "ICC",
+    second: "Cricket",
+  },
+  {
+    id: 7,
+    first: "Golgi Body",
+    second: "Organelle",
+  },
+  {
+    id: 8,
+    first: "Nikola Tesla",
+    second: "Serbia",
+  },
+  {
+    id: 9,
+    first: "Gorbachev",
+    second: "Perestroika",
+  },
+  {
+    id: 10,
+    first: "Hong Kong",
+    second: "1999",
+  },
+  {
+    id: 11,
+    first: "Shinkansen",
+    second: "Train",
+  },
+  {
+    id: 12,
+    first: "Micheal Collins",
+    second: "Apollo",
+  },
+  {
+    id: 13,
+    first: "Socrates",
+    second: "Hemlock",
+  },
+  {
+    id: 14,
+    first: "Chernobyl",
+    second: "Pripyat",
+  },
+  {
+    id: 15,
+    first: "The October Revolution",
+    second: "November",
+  },
+  {
+    id: 16,
+    first: "John Logie Baird",
+    second: "Scotland",
+  },
+  {
+    id: 17,
+    first: "Intel",
+    second: "4004",
+  },
+  {
+    id: 18,
+    first: "The Sopranos",
+    second: "Mafia",
+  },
+  {
+    id: 19,
+    first: "Johann Cruyff",
+    second: "Netherlands",
+  },
+  {
+    id: 20,
+    first: "Enrico Fermi",
+    second: "Nuclear Reactor",
   },
 ];
 
@@ -52,8 +133,83 @@ export const cinemaQuiz = [
   {
     id: 5,
     first: "Captain Phillips",
-    second: "Tom Hanks"
-  }
+    second: "Tom Hanks",
+  },
+  {
+    id: 6,
+    first: "Prisoners",
+    second: "Hugh Jackman",
+  },
+  {
+    id: 7,
+    first: "War of the Worlds",
+    second: "Tom Cruise",
+  },
+  {
+    id: 8,
+    first: "Fight Club",
+    second: "Brad Pitt",
+  },
+  {
+    id: 9,
+    first: "Moonrise Kingdom",
+    second: "Wes Anderson",
+  },
+  {
+    id: 10,
+    first: "Dil Se",
+    second: "Shah Rukh Khan",
+  },
+  {
+    id: 11,
+    first: "Inception",
+    second: "Nolan",
+  },
+  {
+    id: 12,
+    first: "Mark Whitney",
+    second: "Matt Damon",
+  },
+  {
+    id: 13,
+    first: "Pulp Fiction",
+    second: "Tarantino",
+  },
+  {
+    id: 14,
+    first: "Whiplash",
+    second: "Drums",
+  },
+  {
+    id: 15,
+    first: "Pather Panchali",
+    second: "Satyajit Ray",
+  },
+  {
+    id: 16,
+    first: "City of God",
+    second: "Brazil",
+  },
+  {
+    id: 17,
+    first: "Sholay",
+    second: "Amitabh Bachchan",
+  },
+  {
+    id: 18,
+    first: "Scarface",
+    second: "Al Pacino",
+  },
+  {
+    id: 19,
+    first: "Casino Royale",
+    second: "007",
+  },
+  {
+    id: 20,
+    first: "Mr. India",
+    second: "Anil Kapoor",
+  },
 ];
 
 export const superHeroQuiz = [
@@ -78,8 +234,289 @@ export const superHeroQuiz = [
     second: "Asgard",
   },
   {
-    id: 5, 
-    first: "Bucky Barnes", 
-    second: "HYDRA"
-  }
+    id: 5,
+    first: "Bucky Barnes",
+    second: "HYDRA",
+  },
+  {
+    id: 6,
+    first: "Thanos",
+    second: "Death",
+  },
+  {
+    id: 7,
+    first: "Wolverine",
+    second: "Adamantine",
+  },
+  {
+    id: 8,
+    first: "Matt Murdock",
+    second: "Lawyer",
+  },
+  {
+    id: 9,
+    first: "Charles Xavier",
+    second: "Professor X",
+  },
+  {
+    id: 10,
+    first: "Black Panther",
+    second: "Vibranium",
+  },
+  {
+    id: 11,
+    first: "Martian Manhunter",
+    second: "John Jones",
+  },
+  {
+    id: 12,
+    first: "Darkseid",
+    second: "Apokolips",
+  },
+  {
+    id: 13,
+    first: "Benjamin Grimm",
+    second: "The Fantastic Four",
+  },
+  {
+    id: 14,
+    first: "Barry Allen",
+    second: "Iris Frost",
+  },
+  {
+    id: 15,
+    first: "Doctor Strange",
+    second: "Kamar-Taj",
+  },
+  {
+    id: 16,
+    first: "Captain America",
+    second: "Red Skull",
+  },
+  {
+    id: 17,
+    first: "The Hulk",
+    second: "Gamma Rays",
+  },
+  {
+    id: 18,
+    first: "Aquaman",
+    second: "Atlantis",
+  },
+  {
+    id: 19,
+    first: "Black Widow",
+    second: "Natasha Romanoff",
+  },
+  {
+    id: 20,
+    first: "Venom",
+    second: "Eddie Brock",
+  },
+];
+
+export const musicQuiz = [
+  {
+    id: 1,
+    first: "The Beatles",
+    second: "Abbey Road",
+  },
+  {
+    id: 2,
+    first: "Owl City",
+    second: "Ocean Eyes",
+  },
+  {
+    id: 3,
+    first: "John Bonham",
+    second: "Led Zeppelin",
+  },
+  {
+    id: 4,
+    first: "Lady Gaga",
+    second: "A Star is Born",
+  },
+  {
+    id: 5,
+    first: "One Direction",
+    second: "Kevin",
+  },
+  {
+    id: 6,
+    first: "21 Pilots",
+    second: "Blurryface",
+  },
+  {
+    id: 7,
+    first: "Zubeen Garg",
+    second: "Assam",
+  },
+  {
+    id: 8,
+    first: "Pink Floyd",
+    second: "Time",
+  },
+  {
+    id: 9,
+    first: "Freddie Mercury",
+    second: "Parsi",
+  },
+  {
+    id: 10,
+    first: "Michael Jackson",
+    second: "Tomorrowland",
+  },
+  {
+    id: 11,
+    first: "Justin Bieber",
+    second: "Kidrauhl",
+  },
+  {
+    id: 12,
+    first: "Eminem",
+    second: "Marshall Mathers",
+  },
+  {
+    id: 13,
+    first: "Sex Pistols",
+    second: "Sid Vicious",
+  },
+  {
+    id: 14,
+    first: "Bon Iver",
+    second: "Skinny Love",
+  },
+  {
+    id: 15,
+    first: "Adele",
+    second: "21",
+  },
+  {
+    id: 6,
+    first: "21 Pilots",
+    second: "Columbus",
+  },
+  {
+    id: 17,
+    first: "Shreya Ghosal",
+    second: "Manwa Lage",
+  },
+  {
+    id: 18,
+    first: "John Mayer",
+    second: "Gravity",
+  },
+  {
+    id: 19,
+    first: "Coldplay",
+    second: "A Head Full of Dreams",
+  },
+  {
+    id: 20,
+    first: "Stevie Nicks",
+    second: "Fleetwood Mac",
+  },
+];
+
+export const animeQuiz = [
+  {
+    id: 1,
+    first: "Naruto",
+    second: "Kurama",
+  },
+  {
+    id: 2,
+    first: "One Punch Man",
+    second: "Bald",
+  },
+  {
+    id: 3,
+    first: "Death Note",
+    second: "L",
+  },
+  {
+    id: 4,
+    first: "Hunter x Hunter",
+    second: "Hisoka",
+  },
+  {
+    id: 5,
+    first: "Your Name",
+    second: "Meteorite",
+  },
+  {
+    id: 6,
+    first: "Princess Mononoke",
+    second: "Wolf Girl",
+  },
+  {
+    id: 7,
+    first: "Jujutsu Kaisen",
+    second: "Gojo Satoru",
+  },
+  {
+    id: 8,
+    first: "Spirited Away",
+    second: "Oscar",
+  },
+  {
+    id: 9,
+    first: "Demon Slayer",
+    second: "Muzan",
+  },
+  {
+    id: 10,
+    first: "Cowboy Bebop",
+    second: "Faye Valentine",
+  },
+  {
+    id: 11,
+    first: "Monster",
+    second: "Dr. Tenma",
+  },
+  {
+    id: 12,
+    first: "Spy x Family",
+    second: "Anya",
+  },
+  {
+    id: 13,
+    first: "Ghost Stories",
+    second: "American Dub",
+  },
+  {
+    id: 14,
+    first: "Neon Genesis Evangelion",
+    second: "A Cruel Angel's Thesis",
+  },
+  {
+    id: 15,
+    first: "Perfect Blue",
+    second: "Satoshi Kon",
+  },
+  {
+    id: 16,
+    first: "Assassination Classroom",
+    second: "Karma Akabane",
+  },
+  {
+    id: 17,
+    first: "Future Boy Conan",
+    second: "Industria",
+  },
+  {
+    id: 18,
+    first: "Tokyo Ghoul",
+    second: "Kagune",
+  },
+  {
+    id: 19,
+    first: "Violet Evergarden",
+    second: "War",
+  },
+  {
+    id: 20,
+    first: "Attack on Titan",
+    second: "Levi Ackerman",
+  },
 ];

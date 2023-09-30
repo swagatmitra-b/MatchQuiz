@@ -13,6 +13,7 @@
   border-right: 1px solid black;
   height: 100vh;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 .categories li {
@@ -23,6 +24,20 @@
   background-color: rgb(237, 168, 64);
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  margin-top: 3rem;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.categories h2 {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .container {
@@ -59,26 +74,14 @@
   font-size: 1.5rem;
 }
 
-.categories h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-
 span.score {
   position: relative;
   font-size: 1.7rem;
 }
 
-.category-list {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-evenly;
-}
-
 .result {
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
   position: absolute;
   font-size: 1.5rem;
 }
@@ -90,8 +93,33 @@ span.score {
   background-color: thistle;
   border-radius: 8px;
   cursor: pointer;
+  flex-grow: 1;
 }
 
 .seconds {
   background-color: lightblue;
+}
+
+@media screen and (max-width: 420px) {
+  .categories {
+    display: none;
+  }
+  .matches {
+    padding: 1rem;
+    margin-right: 4rem;
+  }
+  .container {
+    text-align: center;
+    scale: 0.9;
+  }
+  .score {
+    margin-top: 1rem;
+    margin-right: 3.2rem;
+  }
+  .result {
+    position: relative;
+    top: 24rem;
+    left: 3.5rem;
+    font-size: 0.9rem;
+  }
 }

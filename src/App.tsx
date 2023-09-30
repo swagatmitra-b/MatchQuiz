@@ -1,20 +1,65 @@
-// import "./styles.css";
 import "./style.css";
-import { capitalQuiz, cinemaQuiz, superHeroQuiz } from "./Data";
-import { useState } from "react";
+import {
+  generalQuiz,
+  cinemaQuiz,
+  superHeroQuiz,
+  musicQuiz,
+  animeQuiz,
+} from "./Data";
+import { useEffect, useState } from "react";
 import Category from "./components/Category";
 import First from "./components/First";
 import Second from "./components/Second";
 
+const hash = {
+  "General Quiz": generalQuiz,
+  "Cinema Quiz": cinemaQuiz,
+  "Superhero Quiz": superHeroQuiz,
+  "Music Quiz": musicQuiz,
+  "Anime Quiz": animeQuiz,
+};
+
 export default function App() {
-  const hash = {
-    "Capitals Quiz": capitalQuiz,
-    "Cinema Quiz": cinemaQuiz,
-    "Superhero Quiz": superHeroQuiz,
-  };
+  function clock(now: any) {
+    let newNow:any = new Date();
+    let inSeconds = (newNow - now) / 1000;
+    let minutes = Math.floor(inSeconds / 60) % 60;
+    let seconds = Math.floor(inSeconds) % 60;
+    let milliseconds = String(inSeconds).split(".")[1];
 
-  const [category, setCategory] = useState(cinemaQuiz);
+    setSpeed(minutes + ":" + seconds + ":" + milliseconds);
+  }
 
+  function fisherYatesShuffle(array: (typeof hash)["General Quiz"]) {
+    let arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function Slicer(category: (typeof hash)["General Quiz"]) {
+    let cat = fisherYatesShuffle(category);
+    let rand = Math.floor(Math.random() * cat.length);
+    let newCat = cat.slice(rand);
+    if (newCat.length > 5) {
+      newCat = cat.slice(rand, cat.length - (newCat.length - 5));
+      return newCat;
+    } else if (newCat.length < 5) {
+      rand = rand - (5 - newCat.length);
+      newCat = cat.slice(rand);
+      return newCat;
+    }
+    return newCat;
+  }
+
+  const [category, setCategory] = useState<ReturnType<typeof Slicer>>(() =>
+    Slicer(generalQuiz)
+  );
+
+  const [speed, setSpeed] = useState<string>("")
+  const [timer, setTimer] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [answer, setAnswer] = useState<string | undefined>("");
   const [first, setFirst] = useState(
@@ -125,8 +170,14 @@ export default function App() {
 
   const firstClick = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
+    if (!timer) setTimer(true);
     if (isActive) {
-      if (!first.includes(answer as string)) return;
+      if (!first.includes(answer as string)) {
+        clearColours("category");
+        target.style.backgroundColor = "orange";
+        checker(target.innerText, "first");
+        return;
+      }
       if (target.innerText === answer) {
         congratulations(target, "first");
         clearColours("active");
@@ -148,8 +199,14 @@ export default function App() {
 
   const secondClick = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
+    if (!timer) setTimer(true);
     if (isActive) {
-      if (!second.includes(answer as string)) return;
+      if (!second.includes(answer as string)) {
+        clearColours("category");
+        target.style.backgroundColor = "orange";
+        checker(target.innerText, "second");
+        return;
+      }
       if (target.innerText === answer) {
         congratulations(target, "second");
         clearColours("active");
@@ -170,28 +227,44 @@ export default function App() {
   };
 
   const changeCategory = (selectedCategory: string) => {
-    const selected = hash[selectedCategory as keyof typeof hash];
+    const selected = Slicer(hash[selectedCategory as keyof typeof hash]);
     setCategory(selected);
     setFirst(
-      selected
-        .map((secondMatch) => secondMatch.first)
-        .sort(() => Math.random() - 0.5)
+      fisherYatesShuffle(selected).map((secondMatch) => secondMatch.first)
     );
     setSecond(
-      selected
-        .map((secondMatch) => secondMatch.second)
-        .sort(() => Math.random() - 0.5)
+      fisherYatesShuffle(selected).map((secondMatch) => secondMatch.second)
     );
     setScore(0);
+    setTimer(false);
     clearColours("category");
   };
+
+  useEffect(() => {
+    let intervalId: any;
+
+    if (timer) {
+      const startTime = new Date();
+      intervalId = setInterval(() => clock(startTime), 10);
+    } else if (!timer && intervalId) {
+      clearInterval(intervalId);
+    }
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [timer]);
+
+  useEffect(() => {
+    if (first.length == 0) setTimer(false);
+  }, [first.length]);
 
   return (
     <div className="app">
       <Category changeCategory={changeCategory} />
       {first.length != 0 ? (
         <div className="container">
-          <span className="score ">Score: {score}</span>
+          <h2 className="score ">Score: {score}</h2>
           <div className="matches">
             <First first={first} firstClick={firstClick} />
             <Second second={second} secondClick={secondClick} />
@@ -200,7 +273,7 @@ export default function App() {
       ) : (
         <div className="result">
           <h2>Your score is {score}</h2>
-          <h2>You completed in time: </h2>
+          <h2>You completed in time {speed}</h2>
         </div>
       )}
     </div>
