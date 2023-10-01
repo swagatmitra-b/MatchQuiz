@@ -1,3 +1,3 @@
-## A Match-Quiz app for Hacktoberfest Contributors
+## A Match-Quiz app for Hacktoberfest
 
 I thought of creating this little quiz app in React last night for all the amazing open source contributors who are eagerly waiting for Hacktoberfest. If you're familiar with JavaScript/TypeScript or React, this could be the best place for you to start contributing to. There are issues and bugs to fix for everyone, regardless of your level of experience. Even if you're someone who's only familiar with CSS, you can jump in and start beautifying this minimalistic app. You are strongly encouraged to contribute by adding new features or documentation to make this app as awesome as possible. Please read the CONTRIBUTING.md for more information! 
