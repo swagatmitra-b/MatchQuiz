@@ -29,7 +29,6 @@
 .category-list {
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   margin-top: 3rem;
   gap: 3rem;
   justify-content: space-evenly;

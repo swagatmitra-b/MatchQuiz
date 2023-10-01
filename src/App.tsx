@@ -15,11 +15,12 @@ const hash = {
   "General Quiz": generalQuiz,
   "Cinema Quiz": cinemaQuiz,
   "Superhero Quiz": superHeroQuiz,
-  "Music Quiz": musicQuiz,
-  "Anime Quiz": animeQuiz,
+  "Music Quiz": musicQuiz, 
+  "Anime Quiz": animeQuiz
 };
 
 export default function App() {
+
   function clock(now: any) {
     let newNow:any = new Date();
     let inSeconds = (newNow - now) / 1000;
@@ -63,14 +64,10 @@ export default function App() {
   const [isActive, setIsActive] = useState(false);
   const [answer, setAnswer] = useState<string | undefined>("");
   const [first, setFirst] = useState(
-    category
-      .map((firstMatch) => firstMatch.first)
-      .sort(() => Math.random() - 0.5)
+    fisherYatesShuffle(category).map((secondMatch) => secondMatch.first)
   );
   const [second, setSecond] = useState(
-    category
-      .map((secondMatch) => secondMatch.second)
-      .sort(() => Math.random() - 0.5)
+    fisherYatesShuffle(category).map((secondMatch) => secondMatch.second)
   );
   const [score, setScore] = useState(0);
 
