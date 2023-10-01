@@ -107,6 +107,56 @@ export const generalQuiz = [
     first: "Enrico Fermi",
     second: "Nuclear Reactor",
   },
+  {
+    id: 21,
+    first: "Steve Jobs",
+    second: "Pixar",
+  },
+  {
+    id: 22,
+    first: "Maasai Mara",
+    second: "Kenya",
+  },
+  {
+    id: 23,
+    first: "Charlemagne",
+    second: "Holy Roman",
+  },
+  {
+    id: 24,
+    first: "General Shepherd",
+    second: "Ghost",
+  },
+  {
+    id: 25,
+    first: "Anne Frank",
+    second: "Kitty",
+  },
+  {
+    id: 26,
+    first: "Liverpool",
+    second: "The Titanic",
+  },
+  {
+    id: 27,
+    first: "Gymnosperm",
+    second: "Cycas",
+  },
+  {
+    id: 28,
+    first: "Peanuts",
+    second: "Charlie Brown",
+  },
+  {
+    id: 29,
+    first: "Mclaren F1",
+    second: "Naturally Aspirated",
+  },
+  {
+    id: 30,
+    first: "Vishnu",
+    second: "Preservation",
+  },
 ];
 
 export const cinemaQuiz = [
@@ -209,6 +259,56 @@ export const cinemaQuiz = [
     id: 20,
     first: "Mr. India",
     second: "Anil Kapoor",
+  },
+  {
+    id: 21,
+    first: "Home Alone",
+    second: "Chicago",
+  },
+  {
+    id: 22,
+    first: "Hannibal Lecter",
+    second: "Anthony Hopkins",
+  },
+  {
+    id: 23,
+    first: "A Clockwork Orange",
+    second: "Kubrick",
+  },
+  {
+    id: 24,
+    first: "Chennai Express",
+    second: "Deepika Padukone",
+  },
+  {
+    id: 25,
+    first: "Alien",
+    second: "Ridley Scott",
+  },
+  {
+    id: 26,
+    first: "Patrick Bateman",
+    second: "American Psycho",
+  },
+  {
+    id: 27,
+    first: "Alfred Hitchcock",
+    second: "Psycho",
+  },
+  {
+    id: 28,
+    first: "Taxi Driver",
+    second: "Scorsese",
+  },
+  {
+    id: 29,
+    first: "8 Mile",
+    second: "Detroit",
+  },
+  {
+    id: 30,
+    first: "The Imitation Game",
+    second: "Alan Turing",
   },
 ];
 
@@ -415,6 +515,56 @@ export const musicQuiz = [
     id: 20,
     first: "Stevie Nicks",
     second: "Fleetwood Mac",
+  },
+  {
+    id: 21,
+    first: "Post Malone",
+    second: "White Iverson",
+  },
+  {
+    id: 22,
+    first: "Liam Gallagher",
+    second: "Oasis",
+  },
+  {
+    id: 23,
+    first: "Video Game",
+    second: "Lana Del Rey",
+  },
+  {
+    id: 24,
+    first: "Donald Glover",
+    second: "Childish Gambino",
+  },
+  {
+    id: 25,
+    first: "Abel Tasfaye",
+    second: "The Weeknd",
+  },
+  {
+    id: 26,
+    first: "Rihanna",
+    second: "Barbados",
+  },
+  {
+    id: 27,
+    first: "Hailey Williams",
+    second: "Paramore",
+  },
+  {
+    id: 28,
+    first: "Yorushika",
+    second: "Itte",
+  },
+  {
+    id: 29,
+    first: "Axl Rose",
+    second: "Guns 'n Roses",
+  },
+  {
+    id: 30,
+    first: "The Local Train",
+    second: "Choo Lo",
   },
 ];
 

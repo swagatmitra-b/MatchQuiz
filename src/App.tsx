@@ -1,7 +1,12 @@
-// import "./styles.css";
 import "./style.css";
-import { generalQuiz, cinemaQuiz, superHeroQuiz, musicQuiz, animeQuiz } from "./Data";
-import { useState, useEffect } from "react";
+import {
+  generalQuiz,
+  cinemaQuiz,
+  superHeroQuiz,
+  musicQuiz,
+  animeQuiz,
+} from "./Data";
+import { useEffect, useState } from "react";
 import Category from "./components/Category";
 import First from "./components/First";
 import Second from "./components/Second";
@@ -25,7 +30,6 @@ export default function App() {
 
     setSpeed(minutes + ":" + seconds + ":" + milliseconds);
   }
-
 
   function fisherYatesShuffle(array: (typeof hash)["General Quiz"]) {
     let arr = [...array];
@@ -51,7 +55,9 @@ export default function App() {
     return newCat;
   }
 
-  const [category, setCategory] = useState<ReturnType<typeof Slicer>>(() => Slicer(generalQuiz));
+  const [category, setCategory] = useState<ReturnType<typeof Slicer>>(() =>
+    Slicer(generalQuiz)
+  );
 
   const [speed, setSpeed] = useState<string>("")
   const [timer, setTimer] = useState(false);
@@ -255,7 +261,7 @@ export default function App() {
       <Category changeCategory={changeCategory} />
       {first.length != 0 ? (
         <div className="container">
-          <span className="score ">Score: {score}</span>
+          <h2 className="score ">Score: {score}</h2>
           <div className="matches">
             <First first={first} firstClick={firstClick} />
             <Second second={second} secondClick={secondClick} />
@@ -264,7 +270,7 @@ export default function App() {
       ) : (
         <div className="result">
           <h2>Your score is {score}</h2>
-          <h2>You completed in time {speed} </h2>
+          <h2>You completed in time {speed}</h2>
         </div>
       )}
     </div>
