@@ -662,11 +662,41 @@ export const animeQuiz = [
   {
     id: 19,
     first: "Violet Evergarden",
-    second: "War",
+    second: "Auto Memory Doll",
   },
   {
     id: 20,
     first: "Attack on Titan",
     second: "Levi Ackerman",
+  },
+  {
+    id: 21,
+    first: "Bleach",
+    second: "Sosuke Aizen",
+  },
+  {
+    id: 22,
+    first: "Stein's gate",
+    second: "Mayushii",
+  },
+  {
+    id: 23,
+    first: "Haikyu!!",
+    second: "Volleyball",
+  },
+  {
+    id: 24,
+    first: "Made in Abyss",
+    second: "White Whistle",
+  },
+  {
+    id: 25,
+    first: "Summertime Rendering",
+    second: "Shadows",
+  },
+  {
+    id: 26,
+    first: "Kiki's Delivery Service",
+    second: "Witch",
   },
 ];
