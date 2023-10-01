@@ -134,7 +134,7 @@ export const generalQuiz = [
   },
   {
     id: 26,
-    first: "Liverpool",
+    first: "Belfast",
     second: "The Titanic",
   },
   {
