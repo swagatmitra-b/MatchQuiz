@@ -27,8 +27,9 @@ export default function App() {
     let minutes = Math.floor(inSeconds / 60) % 60;
     let seconds = Math.floor(inSeconds) % 60;
     let milliseconds = String(inSeconds).split(".")[1];
-
-    setSpeed(minutes + ":" + seconds + ":" + milliseconds);
+    
+    if (minutes == 0) setSpeed(seconds+"."+milliseconds+" seconds")
+    else setSpeed(minutes+" minutes "+"and "+seconds+"."+milliseconds+" seconds")
   }
 
   function fisherYatesShuffle(array: (typeof hash)["General Quiz"]) {
@@ -270,7 +271,7 @@ export default function App() {
       ) : (
         <div className="result">
           <h2>Your score is {score}</h2>
-          <h2>You completed in time {speed}</h2>
+          <h2>You completed in {speed}</h2>
         </div>
       )}
     </div>
