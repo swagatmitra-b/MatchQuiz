@@ -559,7 +559,7 @@ export const musicQuiz = [
   {
     id: 29,
     first: "Axl Rose",
-    second: "Guns 'n Roses",
+    second: "Guns N' Roses",
   },
   {
     id: 30,
