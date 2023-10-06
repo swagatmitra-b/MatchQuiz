@@ -4,6 +4,7 @@ export const Categories = [
   "Superhero Quiz",
   "Music Quiz",
   "Anime Quiz",
+  "Literature Quiz"
 ];
 
 export const generalQuiz = [
@@ -156,6 +157,26 @@ export const generalQuiz = [
     id: 30,
     first: "Vishnu",
     second: "Preservation",
+  },
+  {
+    id: 31,
+    first: "Franz Ferdinand",
+    second: "WW1",
+  },
+  {
+    id: 32,
+    first: "Stalin",
+    second: "Georgia",
+  },
+  {
+    id: 33,
+    first: "Old Trafford",
+    second: "Manchester United",
+  },
+  {
+    id: 34,
+    first: "Aramaic",
+    second: "Levant",
   },
 ];
 
@@ -311,6 +332,159 @@ export const cinemaQuiz = [
     second: "Alan Turing",
   },
 ];
+
+export const literatureQuiz = [
+  {
+    id: 1,
+    first: "Around the World in 80 days",
+    second: "Jean Passepartout",
+  },
+  {
+    id: 2,
+    first: "No Longer Human",
+    second: "Osamu Dazai",
+  },
+  {
+    id: 3,
+    first: "The God of Small Things",
+    second: "Man Booker Prize",
+  },
+  {
+    id: 4,
+    first: "Pride and Prejudice",
+    second: "Fitzwilliam Darcy Esquire",
+  },
+  {
+    id: 5,
+    first: "Dostoevsky",
+    second: "Crime and Punishment",
+  },
+  {
+    id: 6,
+    first: "Oscar Wilde",
+    second: "The Picture of Dorian Gray",
+  },
+  {
+    id: 7,
+    first: "Moby Dick",
+    second: "Captain Ahab",
+  },
+  {
+    id: 8,
+    first: "Agatha Christie",
+    second: "The Murder of Roger Ackroyd",
+  },
+  {
+    id: 9,
+    first: "A Scandal in Bohemia",
+    second: "Irene Adler",
+  },
+  {
+    id: 10,
+    first: "Gabriel García Márquez",
+    second: "One Hundred Years of Solitude",
+  },
+  {
+    id: 11,
+    first: "Les Miserables",
+    second: "Victor Hugo",
+  },
+  {
+    id: 12,
+    first: "Cheshire cat",
+    second: "Alice in Wonderland",
+  },
+  {
+    id: 13,
+    first: "JRR Tolkien",
+    second: "Middle Earth",
+  },
+  {
+    id: 14,
+    first: "Great Expectations",
+    second: "Charles Dickens",
+  },
+  {
+    id: 15,
+    first: "Don Quixote",
+    second: "17th Century",
+  },
+  {
+    id: 16,
+    first: "Wuthering Heights",
+    second: "Emily Brontë",
+  },
+  {
+    id: 17,
+    first: "The Rape of a Lock",
+    second: "Alexander Pope",
+  },
+  {
+    id: 18,
+    first: "Edgar Allan Poe",
+    second: "Anabelle Lee",
+  },
+  {
+    id: 19,
+    first: "Claudius",
+    second: "Hamlet",
+  },
+  {
+    id: 20,
+    first: "The Old Man and the Sea",
+    second: "Ernest Hemingway",
+  },
+  {
+    id: 21,
+    first: "Sylvia Plath",
+    second: "Daddy",
+  },
+  {
+    id: 22,
+    first: "Carrie",
+    second: "Stephen King",
+  },
+  {
+    id: 23,
+    first: "The Famous Five",
+    second: "Kirrin Island",
+  },
+  {
+    id: 24,
+    first: "The Canterbury Tales",
+    second: "Chaucer",
+  },
+  {
+    id: 25,
+    first: "Expecto Patronum",
+    second: "Dementors",
+  },
+  {
+    id: 26,
+    first: "The Kite Runner",
+    second: "Afghanistan",
+  },
+  {
+    id: 27,
+    first: "Rudyard Kipling",
+    second: "Mowgli",
+  },
+  {
+    id: 28,
+    first: "Robert Langdon",
+    second: "Dan Brown",
+  },
+  {
+    id: 29,
+    first: "George Orwell",
+    second: "1984",
+  },
+  {
+    id: 30,
+    first: "Hans Christian Andersen",
+    second: "The Ugly Duckling",
+  },
+]
 
 export const superHeroQuiz = [
   {

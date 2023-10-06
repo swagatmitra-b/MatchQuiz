@@ -5,6 +5,7 @@ import {
   superHeroQuiz,
   musicQuiz,
   animeQuiz,
+  literatureQuiz
 } from "./Data";
 import { useEffect, useState } from "react";
 import Category from "./components/Category";
@@ -16,7 +17,8 @@ const hash = {
   "Cinema Quiz": cinemaQuiz,
   "Superhero Quiz": superHeroQuiz,
   "Music Quiz": musicQuiz, 
-  "Anime Quiz": animeQuiz
+  "Anime Quiz": animeQuiz,
+  "Literature Quiz": literatureQuiz
 };
 
 export default function App() {
