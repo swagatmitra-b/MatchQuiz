@@ -4,7 +4,7 @@ export const Categories = [
   "Superhero Quiz",
   "Music Quiz",
   "Anime Quiz",
-  "Literature Quiz"
+  "Literature Quiz",
 ];
 
 export const generalQuiz = [
@@ -294,7 +294,7 @@ export const cinemaQuiz = [
   {
     id: 23,
     first: "A Clockwork Orange",
-    second: "Kubrick",
+    second: "Stanley Kubrick",
   },
   {
     id: 24,
@@ -329,7 +329,107 @@ export const cinemaQuiz = [
   {
     id: 30,
     first: "The Imitation Game",
-    second: "Alan Turing",
+    second: "Benedict Cumberbatch",
+  },
+  {
+    id: 31,
+    first: "Steven Spielberg",
+    second: "Saving Private Ryan",
+  },
+  {
+    id: 32,
+    first: "Some Like it Hot",
+    second: "Marilyn Monroe",
+  },
+  {
+    id: 33,
+    first: "12 Angry Men",
+    second: "Jury",
+  },
+  {
+    id: 34,
+    first: "Aamir Khan",
+    second: "Lagaan",
+  },
+  {
+    id: 35,
+    first: "The Shawshank Redemption",
+    second: "Morgan Freeman",
+  },
+  {
+    id: 36,
+    first: "Micheal Corleone",
+    second: "The Godfather",
+  },
+  {
+    id: 37,
+    first: "No Country for Old Men",
+    second: "Anton Chigurh",
+  },
+  {
+    id: 38,
+    first: "Audrey Hepburn",
+    second: "Breakfast at Tiffany's",
+  },
+  {
+    id: 39,
+    first: "500 Days of Summer",
+    second: "Joseph-Gordon-Levitt",
+  },
+  {
+    id: 40,
+    first: "Parasite",
+    second: "Bong Joon Ho",
+  },
+  {
+    id: 41,
+    first: "Casablanca",
+    second: "Ingrid Bergman",
+  },
+  {
+    id: 42,
+    first: "The Apartment",
+    second: "NYC",
+  },
+  {
+    id: 43,
+    first: "The Exorcist",
+    second: "Regan McNeil",
+  },
+  {
+    id: 44,
+    first: "Schindler's List",
+    second: "Holocaust",
+  },
+  {
+    id: 45,
+    first: "Gladiator",
+    second: "Russel Crowe",
+  },
+  {
+    id: 46,
+    first: "The Master",
+    second: "Joaquin Phoenix",
+  },
+  {
+    id: 47,
+    first: "Primal Fear",
+    second: "Edward Norton",
+  },
+  {
+    id: 48,
+    first: "The Matrix",
+    second: "Morpheus",
+  },
+  {
+    id: 49,
+    first: "John Wick",
+    second: "Keanu Reeves",
+  },
+  {
+    id: 50,
+    first: "Irrfan Khan",
+    second: "Life of Pi",
   },
 ];
 
@@ -337,7 +437,7 @@ export const literatureQuiz = [
   {
     id: 1,
     first: "Around the World in 80 days",
-    second: "Jean Passepartout",
+    second: "Jules Verne",
   },
   {
     id: 2,
@@ -347,16 +447,16 @@ export const literatureQuiz = [
   {
     id: 3,
     first: "The God of Small Things",
-    second: "Man Booker Prize",
+    second: "Arundhati Roy",
   },
   {
     id: 4,
     first: "Pride and Prejudice",
-    second: "Fitzwilliam Darcy Esquire",
+    second: "Jane Austen",
   },
   {
     id: 5,
-    first: "Dostoevsky",
+    first: "Fyodor Dostoevsky",
     second: "Crime and Punishment",
   },
   {
@@ -367,7 +467,7 @@ export const literatureQuiz = [
   {
     id: 7,
     first: "Moby Dick",
-    second: "Captain Ahab",
+    second: "Herman Melville",
   },
   {
     id: 8,
@@ -377,7 +477,7 @@ export const literatureQuiz = [
   {
     id: 9,
     first: "A Scandal in Bohemia",
-    second: "Irene Adler",
+    second: "Arthur Conan Doyle",
   },
   {
     id: 10,
@@ -391,13 +491,13 @@ export const literatureQuiz = [
   },
   {
     id: 12,
-    first: "Cheshire cat",
+    first: "Lewis Caroll",
     second: "Alice in Wonderland",
   },
   {
     id: 13,
     first: "JRR Tolkien",
-    second: "Middle Earth",
+    second: "The Hobbit",
   },
   {
     id: 14,
@@ -407,7 +507,7 @@ export const literatureQuiz = [
   {
     id: 15,
     first: "Don Quixote",
-    second: "17th Century",
+    second: "Miguel de Cervantes",
   },
   {
     id: 16,
@@ -426,7 +526,7 @@ export const literatureQuiz = [
   },
   {
     id: 19,
-    first: "Claudius",
+    first: "Shakespeare",
     second: "Hamlet",
   },
   {
@@ -447,7 +547,7 @@ export const literatureQuiz = [
   {
     id: 23,
     first: "The Famous Five",
-    second: "Kirrin Island",
+    second: "Enid Blyton",
   },
   {
     id: 24,
@@ -456,22 +556,22 @@ export const literatureQuiz = [
   },
   {
     id: 25,
-    first: "Expecto Patronum",
-    second: "Dementors",
+    first: "Harry Potter and the Philospher's Stone",
+    second: "Joanne Rowling",
   },
   {
     id: 26,
     first: "The Kite Runner",
-    second: "Afghanistan",
+    second: "Khaled Hosseini",
   },
   {
     id: 27,
     first: "Rudyard Kipling",
-    second: "Mowgli",
+    second: "The Jungle Book",
   },
   {
     id: 28,
-    first: "Robert Langdon",
+    first: "The Da Vinci Code",
     second: "Dan Brown",
   },
   {
@@ -484,7 +584,107 @@ export const literatureQuiz = [
     first: "Hans Christian Andersen",
     second: "The Ugly Duckling",
   },
-]
+  {
+    id: 31,
+    first: "Robert L. Stevenson",
+    second: "Treasure Island",
+  },
+  {
+    id: 32,
+    first: "Louisa May Alcott",
+    second: "Little Women",
+  },
+  {
+    id: 33,
+    first: "The Adventures of Tom Sawyer",
+    second: "Mark Twain",
+  },
+  {
+    id: 34,
+    first: "The Master and Margarita",
+    second: "Mikhail Bulgakov",
+  },
+  {
+    id: 35,
+    first: "Anna Karenina",
+    second: "Leo Tolstoy",
+  },
+  {
+    id: 36,
+    first: "Emily Dickinson",
+    second: "Because I Could Not Stop for Death",
+  },
+  {
+    id: 37,
+    first: "Mrs Dalloway",
+    second: "Virginia Woolf",
+  },
+  {
+    id: 38,
+    first: "Franz Kafka",
+    second: "The Metamorphosis",
+  },
+  {
+    id: 39,
+    first: "Guy de Maupassant",
+    second: "The Necklace",
+  },
+  {
+    id: 40,
+    first: "Munshi Premchand",
+    second: "Godaan",
+  },
+  {
+    id: 41,
+    first: "How Green Was My Valley",
+    second: "Richard Llewellyn",
+  },
+  {
+    id: 42,
+    first: "Matilda",
+    second: "Roald Dahl",
+  },
+  {
+    id: 43,
+    first: "Divine Comedy",
+    second: "Dante Alighieri",
+  },
+  {
+    id: 44,
+    first: "The Great Gatsby",
+    second: "Scott F. Fitzgerald",
+  },
+  {
+    id: 45,
+    first: "Vladimir Nabukov",
+    second: "Lolita",
+  },
+  {
+    id: 46,
+    first: "To Kill a Mockingbird",
+    second: "Harper Lee",
+  },
+  {
+    id: 47,
+    first: "Farenheight 451",
+    second: "Ray Bradbury",
+  },
+  {
+    id: 48,
+    first: "The Room on The Roof",
+    second: "Ruskin Bond",
+  },
+  {
+    id: 49,
+    first: "Malgudi Days ",
+    second: "RK Narayan",
+  },
+  {
+    id: 50,
+    first: "The Invisible Man",
+    second: "HG Wells",
+  },
+];
 
 export const superHeroQuiz = [
   {
@@ -608,12 +808,12 @@ export const musicQuiz = [
   {
     id: 4,
     first: "Lady Gaga",
-    second: "A Star is Born",
+    second: "Always Remember Us This Way",
   },
   {
     id: 5,
     first: "One Direction",
-    second: "Kevin",
+    second: "One Thing",
   },
   {
     id: 6,
@@ -682,8 +882,8 @@ export const musicQuiz = [
   },
   {
     id: 19,
-    first: "Coldplay",
-    second: "A Head Full of Dreams",
+    first: "Yellow",
+    second: "Coldplay",
   },
   {
     id: 20,
@@ -722,7 +922,7 @@ export const musicQuiz = [
   },
   {
     id: 27,
-    first: "Hailey Williams",
+    first: "Hayley Williams",
     second: "Paramore",
   },
   {
@@ -740,18 +940,118 @@ export const musicQuiz = [
     first: "The Local Train",
     second: "Choo Lo",
   },
+  {
+    id: 31,
+    first: "American Idiot",
+    second: "Green Day",
+  },
+  {
+    id: 32,
+    first: "Lynyrd Skynyrd",
+    second: "Plane crash",
+  },
+  {
+    id: 33,
+    first: "Carly Rae Jepsen",
+    second: "Call Me Maybe",
+  },
+  {
+    id: 34,
+    first: "Nirvana",
+    second: "Nevermind",
+  },
+  {
+    id: 35,
+    first: "Metallica",
+    second: "Enter Sandman",
+  },
+  {
+    id: 36,
+    first: "Take Me to Church",
+    second: "Hozier",
+  },
+  {
+    id: 37,
+    first: "Florence + The Machine",
+    second: "Cosmic Love",
+  },
+  {
+    id: 38,
+    first: "Robbers",
+    second: "The 1975",
+  },
+  {
+    id: 39,
+    first: "MGMT",
+    second: "Electric Feels",
+  },
+  {
+    id: 40,
+    first: "Ravi Shankar",
+    second: "Sitar",
+  },
+  {
+    id: 41,
+    first: "Ophelia",
+    second: "The Lumineers",
+  },
+  {
+    id: 42,
+    first: "Divide",
+    second: "Ed Sheeran",
+  },
+  {
+    id: 43,
+    first: "Words of Wisdom",
+    second: "Tupac Shakur",
+  },
+  {
+    id: 44,
+    first: "Elton John",
+    second: "Rocket Man",
+  },
+  {
+    id: 45,
+    first: "Muse",
+    second: "Sunburn",
+  },
+  {
+    id: 46,
+    first: "Arctic Monkeys",
+    second: "Arabella",
+  },
+  {
+    id: 47,
+    first: "Lewis Capaldi",
+    second: "Divinely Uninspired to a Hellish Extent",
+  },
+  {
+    id: 48,
+    first: "5 Seconds of Summer",
+    second: "Sydney",
+  },
+  {
+    id: 49,
+    first: "Linkin Park",
+    second: "Chester Bennington",
+  },
+  {
+    id: 50,
+    first: "Imagine Dragons",
+    second: "Demons",
+  },
 ];
 
 export const animeQuiz = [
   {
     id: 1,
     first: "Naruto",
-    second: "Kurama",
+    second: "The Akatsuki",
   },
   {
     id: 2,
     first: "One Punch Man",
-    second: "Bald",
+    second: "Saitama",
   },
   {
     id: 3,
@@ -872,5 +1172,55 @@ export const animeQuiz = [
     id: 26,
     first: "Kiki's Delivery Service",
     second: "Witch",
+  },
+  {
+    id: 27,
+    first: "Vinland Saga",
+    second: "Thorfinn",
+  },
+  {
+    id: 28, 
+    first: "The Wired", 
+    second: "Serial Experiments Lain"
+  },
+  {
+    id: 29,
+    first: "K-ON!",
+    second: "Yui Hirasawa",
+  },
+  {
+    id: 30,
+    first: "Code Geass",
+    second: "Holy Britannian Empire",
+  },
+  {
+    id: 31,
+    first: "Ash Ketchum",
+    second: "Pokémon",
+  },
+  {
+    id: 32,
+    first: "The Chainsaw Man",
+    second: "Makima",
+  },
+  {
+    id: 33,
+    first: "Blue Lock",
+    second: "Yoichi Isagi",
+  },
+  {
+    id: 34,
+    first: "Akira",
+    second: "Cyberpunk",
+  },
+  {
+    id: 35,
+    first: "Hokuto No Ken",
+    second: "Kenshiro",
+  },
+  {
+    id: 36,
+    first: "Summer Wars",
+    second: "Mamoru Hosoda",
   },
 ];
